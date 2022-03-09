@@ -94,6 +94,7 @@ def main():
             youtube = takeCommand()
             speak('searching youtube for ' + youtube)
             url = "https://www.youtube.com/results?search_query=" + youtube
+            #will need to change these paths for each chrome path + .exe paths for your specific computer!!!
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
             webbrowser.get(chrome_path).open(url)
             num = 1
